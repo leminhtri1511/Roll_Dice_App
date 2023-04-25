@@ -9,7 +9,7 @@ Cách cài đặt
 Tải xuống mã nguồn từ Github:
 bash
 
-    git clone https://github.com/<your-username>/<your-repo>.git
+    git clone https://github.com/leminhtri1511/Roll_Dice_App.git
 
 Mở terminal và điều hướng đến thư mục chứa mã nguồn vừa tải xuống.
 
