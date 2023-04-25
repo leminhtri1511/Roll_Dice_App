@@ -56,6 +56,5 @@ File `dice_holder.dart` chứa widget `DiceHolder`, một widget `Stateless` hi�
 
 Dự án này được cấp phép theo Giấy phép MIT - xem tệp LICENSE.md để biết chi tiết.
 
-Để giúp người dùng hiểu rõ hơn về ứng dụng của bạn, tạo một file README.md đẹp và rõ ràng là rất cần thiết. Dưới đây là một mẫu README.md có thể giúp bạn bắt đầu:
 
 
