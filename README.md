@@ -58,8 +58,4 @@ Dự án này được cấp phép theo Giấy phép MIT - xem tệp LICENSE.md 
 
 Để giúp người dùng hiểu rõ hơn về ứng dụng của bạn, tạo một file README.md đẹp và rõ ràng là rất cần thiết. Dưới đây là một mẫu README.md có thể giúp bạn bắt đầu:
 
-# Tên ứng dụng
-
-Đây là một ứng dụng được phát triển bằng Flutter để giúp bạn tung xúc xắc và kiểm tra xem tổng điểm có phải là chẵn hay lẻ, lớn hay nhỏ.
-
 
