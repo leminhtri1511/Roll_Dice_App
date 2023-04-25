@@ -2,16 +2,29 @@
 
 Đây là một ứng dụng Flutter đơn giản cho phép bạn lắc ba xúc xắc và hiển thị tổng giá trị của chúng. Ứng dụng cũng hiển thị xem tổng có phải là số chẵn hay lẻ và có lớn hơn 10 hay không.
 
-## Bắt đầu
+## Cách cài đặt
 
-Để bắt đầu với ứng dụng Flutter DiceRoll, làm theo các bước sau:
+Để cài đặt ứng dụng, bạn có thể thực hiện các bước sau:
 
-1. Sao chép repository về máy tính của bạn.
-2. Mở dự án trong IDE hoặc trình soạn thảo yêu thích của bạn (như Android Studio hoặc Visual Studio Code).
-3. Đảm bảo rằng bạn đã cài đặt Flutter SDK trên máy tính của mình. Nếu bạn chưa cài đặt, làm theo hướng dẫn trên trang web Flutter để tải xuống và cài đặt nó: https://flutter.dev/docs/get-started/install
-4. Kết nối thiết bị Android hoặc iOS của bạn với máy tính.
-5. Chạy ứng dụng trong IDE hoặc trình soạn thảo yêu thích của bạn và chọn thiết bị kết nối làm mục tiêu.
-6. Ứng dụng sẽ được xây dựng và chạy trên thiết bị của bạn.
+1. Tải xuống mã nguồn từ Github:
+
+   ```
+   git clone https://github.com/<your-username>/<your-repo>.git
+   ```
+
+2. Mở terminal và điều hướng đến thư mục chứa mã nguồn vừa tải xuống.
+
+3. Chạy lệnh sau để cài đặt các gói phụ thuộc:
+
+   ```
+   flutter pub get
+   ```
+
+4. Kết nối thiết bị hoặc máy ảo và chạy ứng dụng bằng lệnh:
+
+   ```
+   flutter run
+   ```
 
 ## Chức năng
 
@@ -42,3 +55,11 @@ File `dice_holder.dart` chứa widget `DiceHolder`, một widget `Stateless` hi�
 ## Giấy phép
 
 Dự án này được cấp phép theo Giấy phép MIT - xem tệp LICENSE.md để biết chi tiết.
+
+Để giúp người dùng hiểu rõ hơn về ứng dụng của bạn, tạo một file README.md đẹp và rõ ràng là rất cần thiết. Dưới đây là một mẫu README.md có thể giúp bạn bắt đầu:
+
+# Tên ứng dụng
+
+Đây là một ứng dụng được phát triển bằng Flutter để giúp bạn tung xúc xắc và kiểm tra xem tổng điểm có phải là chẵn hay lẻ, lớn hay nhỏ.
+
+
