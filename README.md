@@ -1,39 +1,65 @@
-Roll Dice
+# Flutter DiceRoll App
 
-Đây là một ứng dụng được phát triển bằng Flutter để giúp bạn tung xúc xắc và kiểm tra xem tổng điểm có phải là chẵn hay lẻ, lớn hay nhỏ.
+Đây là một ứng dụng Flutter đơn giản cho phép bạn lắc ba xúc xắc và hiển thị tổng giá trị của chúng. Ứng dụng cũng hiển thị xem tổng có phải là số chẵn hay lẻ và có lớn hơn 10 hay không.
 
-Cách cài đặt
+## Cách cài đặt
 
 Để cài đặt ứng dụng, bạn có thể thực hiện các bước sau:
 
-Tải xuống mã nguồn từ Github:
-bash
+1. Tải xuống mã nguồn từ Github:
 
-    git clone https://github.com/leminhtri1511/Roll_Dice_App.git
+   ```
+   git clone https://github.com/<your-username>/<your-repo>.git
+   ```
 
-Mở terminal và điều hướng đến thư mục chứa mã nguồn vừa tải xuống.
+2. Mở terminal và điều hướng đến thư mục chứa mã nguồn vừa tải xuống.
 
-Chạy lệnh sau để cài đặt các gói phụ thuộc:
+3. Chạy lệnh sau để cài đặt các gói phụ thuộc:
 
-ardui
+   ```
+   flutter pub get
+   ```
 
-    flutter pub get
+4. Kết nối thiết bị hoặc máy ảo và chạy ứng dụng bằng lệnh:
 
-Kết nối thiết bị hoặc máy ảo và chạy ứng dụng bằng lệnh:
+   ```
+   flutter run
+   ```
 
-arduino
+## Chức năng
 
-    flutter run
-Cách sử dụng
+Ứng dụng cho phép bạn:
 
-Để sử dụng ứng dụng, bạn chỉ cần bấm vào nút "Roll Dice" để tung xúc xắc và xem kết quả. Kết quả sẽ hiển thị tổng điểm của ba xúc xắc, cùng với kết quả là chẵn hay lẻ, lớn hay nhỏ.
+- Lắc ba xúc xắc bằng cách nhấn nút "Roll Dice"
+- Xem giá trị của từng xúc xắc và tổng giá trị của chúng
+- Xem tổng có lớn hơn 10 hay không
+- Xem tổng có phải là số chẵn hay lẻ
 
-Các chức năng
+## Cấu trúc mã
 
-Tung xúc xắc và tính tổng điểm.
-Kiểm tra kết quả chẵn/lẻ và lớn/nhỏ của tổng điểm.
+File `dice_holder.dart` và `main.dart` được sử dụng trong ứng dụng `DiceApp` để hiển thị trò chơi cùng với background gradient và đặt trò chơi giữa trung tâm của màn hình.
 
-Công nghệ sử dụng
+File `dice_roll.dart` chứa mã để hiển thị trò chơi và các chức năng liên quan đến nó. Trò chơi là việc tung ba xúc xắc, tính tổng điểm số của chúng, và xác định kết quả của trò chơi dựa trên tổng điểm và tính chẵn lẻ của tổng.
 
-Flutter
-Dart
+File `main.dart` là nơi khởi động của ứng dụng `DiceApp`. Nó cấu hình `MaterialApp` và chỉ định `DiceHolder` là màn hình chính của ứng dụng.
+
+File `dice_holder.dart` chứa widget `DiceHolder`, một widget `Stateless` hiển thị trò chơi cùng với background gradient và đặt trò chơi giữa trung tâm của màn hình.
+
+## Dependencies
+
+Ứng dụng sử dụng các gói Flutter sau:
+
+- `flutter/material.dart` cho các widget cơ bản của Flutter và phong cách thiết kế vật liệu
+- `dart:math` để tạo số ngẫu nhiên
+
+## Giấy phép
+
+Dự án này được cấp phép theo Giấy phép MIT - xem tệp LICENSE.md để biết chi tiết.
+
+Để giúp người dùng hiểu rõ hơn về ứng dụng của bạn, tạo một file README.md đẹp và rõ ràng là rất cần thiết. Dưới đây là một mẫu README.md có thể giúp bạn bắt đầu:
+
+# Tên ứng dụng
+
+Đây là một ứng dụng được phát triển bằng Flutter để giúp bạn tung xúc xắc và kiểm tra xem tổng điểm có phải là chẵn hay lẻ, lớn hay nhỏ.
+
+
