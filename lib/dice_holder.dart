@@ -11,8 +11,7 @@ const colors = [
 ];
 
 class DiceHolder extends StatelessWidget {
-  const DiceHolder({super.key, });
-
+  const DiceHolder({super.key});
   // final List<Color> colors;
 
   @override

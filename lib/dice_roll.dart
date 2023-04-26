@@ -67,7 +67,7 @@ class _DiceRollState extends State<DiceRoll> {
           ],
         ),
 
-        const SizedBox(height: 20),
+        const SizedBox(height: 30),
 
         TextButton(
           onPressed: rollDice,
@@ -83,7 +83,7 @@ class _DiceRollState extends State<DiceRoll> {
           child: const Text(' Roll Dice '),
         ),
 
-        const SizedBox(height: 20),
+        const SizedBox(height: 50),
 
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -91,7 +91,7 @@ class _DiceRollState extends State<DiceRoll> {
             Text(
               'Tổng: $sum',
               style: const TextStyle(
-                fontSize: 25,
+                fontSize: 20,
                 color: Colors.white,
               ),
             ),
@@ -103,7 +103,7 @@ class _DiceRollState extends State<DiceRoll> {
                 Text(
                   '$result / ',
                   style: const TextStyle(
-                    fontSize: 25,
+                    fontSize: 20,
                     color: Colors.white,
                   ),
                 ),
@@ -111,7 +111,7 @@ class _DiceRollState extends State<DiceRoll> {
                 Text(
                   '$div',
                   style: const TextStyle(
-                    fontSize: 25,
+                    fontSize: 20,
                     color: Colors.white,
                   ),
                 ),
