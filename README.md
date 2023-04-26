@@ -2,7 +2,7 @@
 
 Đây là một ứng dụng Flutter đơn giản cho phép bạn lắc ba xúc xắc và hiển thị tổng giá trị của chúng. Với việc sử dụng các tính năng như StatefulWidget và setState, ứng dụng có thể cập nhật giao diện ngay lập tức mỗi khi người dùng lắc xúc xắc.
 
-## Cách cài đặt
+## 1. Cách cài đặt
 
 Để cài đặt ứng dụng, bạn có thể thực hiện các bước sau:
 
@@ -26,7 +26,7 @@
    flutter run
    ```
 
-## Chức năng
+## 2. Chức năng
 
 Ứng dụng cho phép bạn:
 
@@ -34,7 +34,7 @@
 - Xem giá trị của từng xúc xắc và tổng giá trị của chúng
 - Xem tổng có thuộc tính **lớn/nhỏ** và **chẵn/lẻ**
 
-## Cấu trúc mã
+## 3. Cấu trúc mã
 
 File `dice_roll.dart` chứa mã để hiển thị trò chơi và các chức năng liên quan đến nó.
 
@@ -44,7 +44,7 @@ File `main.dart` là nơi khởi động của ứng dụng `DiceApp`. Nó cấu
 
 File `dice_holder.dart` chứa widget `DiceHolder`, một widget `Stateless` hiển thị trò chơi cùng với background gradient và đặt trò chơi giữa trung tâm của màn hình.
 
-## Thư viện và công nghệ
+## 4. Thư viện và công nghệ
 
 - `Flutter Framework`
 - `Dart Programming Language `
