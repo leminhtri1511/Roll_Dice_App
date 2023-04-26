@@ -1,6 +1,6 @@
 # Flutter DiceRoll App
 
-Đây là một ứng dụng Flutter đơn giản cho phép bạn lắc ba xúc xắc và hiển thị tổng giá trị của chúng. Ứng dụng cũng hiển thị xem tổng có phải là số chẵn hay lẻ và có lớn hơn 10 hay không.
+Đây là một ứng dụng Flutter đơn giản cho phép bạn lắc ba xúc xắc và hiển thị tổng giá trị của chúng. Với việc sử dụng các tính năng như StatefulWidget và setState, ứng dụng có thể cập nhật giao diện ngay lập tức mỗi khi người dùng lắc xúc xắc.
 
 ## Cách cài đặt
 
@@ -32,29 +32,23 @@
 
 - Lắc ba xúc xắc bằng cách nhấn nút "Roll Dice"
 - Xem giá trị của từng xúc xắc và tổng giá trị của chúng
-- Xem tổng có lớn hơn 10 hay không
-- Xem tổng có phải là số chẵn hay lẻ
+- Xem tổng có thuộc tính **lớn/nhỏ** và **chẵn/lẻ**
 
 ## Cấu trúc mã
 
-File `dice_holder.dart` và `main.dart` được sử dụng trong ứng dụng `DiceApp` để hiển thị trò chơi cùng với background gradient và đặt trò chơi giữa trung tâm của màn hình.
+File `dice_roll.dart` chứa mã để hiển thị trò chơi và các chức năng liên quan đến nó.
 
-File `dice_roll.dart` chứa mã để hiển thị trò chơi và các chức năng liên quan đến nó. Trò chơi là việc tung ba xúc xắc, tính tổng điểm số của chúng, và xác định kết quả của trò chơi dựa trên tổng điểm và tính chẵn lẻ của tổng.
+File `dice_holder.dart` và `main.dart` được sử dụng trong ứng dụng `DiceApp` để hiển thị trò chơi cùng với background gradient và đặt trò chơi giữa trung tâm của màn hình.
 
 File `main.dart` là nơi khởi động của ứng dụng `DiceApp`. Nó cấu hình `MaterialApp` và chỉ định `DiceHolder` là màn hình chính của ứng dụng.
 
 File `dice_holder.dart` chứa widget `DiceHolder`, một widget `Stateless` hiển thị trò chơi cùng với background gradient và đặt trò chơi giữa trung tâm của màn hình.
 
-## Dependencies
+## Thư viện và công nghệ
 
-Ứng dụng sử dụng các gói Flutter sau:
-
+- `Flutter Framework`
+- `Dart Programming Language `
 - `flutter/material.dart` cho các widget cơ bản của Flutter và phong cách thiết kế vật liệu
 - `dart:math` để tạo số ngẫu nhiên
 
-## Giấy phép
-
-Dự án này được cấp phép theo Giấy phép MIT - xem tệp LICENSE.md để biết chi tiết.
-
-
-
+-----
