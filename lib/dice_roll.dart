@@ -32,18 +32,18 @@ class _DiceRollState extends State<DiceRoll> {
   @override
   Widget build(BuildContext context) {
 
-    String result = '', div ='';
+    String resultSum = '', resultDiv ='';
     if (sum > 10) {
-      result = 'Lớn';
+      resultSum = 'Lớn';
     } else {
-      result = 'Nhỏ';
+      resultSum = 'Nhỏ';
     }
 
     if(sum % 2 == 0 ) {
-      div = 'Chẵn';
+      resultDiv = 'Chẵn';
     }
     else {
-      div ='Lẻ';
+      resultDiv ='Lẻ';
     }
     
     return Column(
@@ -101,7 +101,7 @@ class _DiceRollState extends State<DiceRoll> {
             Row(
               children: [
                 Text(
-                  '$result / ',
+                  '$resultSum / ',
                   style: const TextStyle(
                     fontSize: 20,
                     color: Colors.white,
@@ -109,7 +109,7 @@ class _DiceRollState extends State<DiceRoll> {
                 ),
 
                 Text(
-                  '$div',
+                  '$resultDiv',
                   style: const TextStyle(
                     fontSize: 20,
                     color: Colors.white,
