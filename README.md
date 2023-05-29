@@ -1,4 +1,4 @@
-# Flutter DiceRoll App
+# DiceRoller App
 
 Đây là một ứng dụng Flutter đơn giản cho phép bạn lắc ba xúc xắc và hiển thị tổng giá trị của chúng. Với việc sử dụng các tính năng như StatefulWidget và setState, ứng dụng có thể cập nhật giao diện ngay lập tức mỗi khi người dùng lắc xúc xắc.
 
