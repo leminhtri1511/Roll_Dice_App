@@ -1,54 +1,54 @@
 # DiceRoller App
 
-Đây là một ứng dụng Flutter đơn giản cho phép bạn lắc ba xúc xắc và hiển thị tổng giá trị của chúng. Với việc sử dụng các tính năng như StatefulWidget và setState, ứng dụng có thể cập nhật giao diện ngay lập tức mỗi khi người dùng lắc xúc xắc.
+This is a simple Flutter application that allows you to roll three dice and display their total value. By utilizing features like StatefulWidget and setState, the app can update the interface immediately whenever the user rolls the dice.
 
-## 1. Cách cài đặt
+## 1. Installation
 
-Để cài đặt ứng dụng, bạn có thể thực hiện các bước sau:
+To install the app, you can follow these steps:
 
-1. Tải xuống mã nguồn từ Github:
+1. Download the source code from Github:
 
    ```
    git clone https://github.com/leminhtri1511/Roll_Dice_App.git
    ```
 
-2. Mở terminal và điều hướng đến thư mục chứa mã nguồn vừa tải xuống.
+2. Open a terminal and navigate to the directory containing the downloaded source code.
 
-3. Chạy lệnh sau để cài đặt các gói phụ thuộc:
+3. Run the following command to install the dependencies:
 
    ```
    flutter pub get
    ```
 
-4. Kết nối thiết bị hoặc máy ảo và chạy ứng dụng bằng lệnh:
+4. Connect your device or emulator and run the app using the command:
 
    ```
    flutter run
    ```
 
-## 2. Chức năng
+## 2. Features
 
-Ứng dụng cho phép bạn:
+The app allows you to:
 
-- Lắc ba xúc xắc bằng cách nhấn nút "Roll Dice"
-- Xem giá trị của từng xúc xắc và tổng giá trị của chúng
-- Xem tổng có thuộc tính **lớn/nhỏ** và **chẵn/lẻ**
+- Roll three dice by pressing the "Roll Dice" button.
+- View the value of each die and the total value of all three dice.
+- Determine if the total value is **high/low** and **even/odd**.
 
-## 3. Cấu trúc mã
+## 3. Code Structure
 
-File `dice_roll.dart` chứa mã để hiển thị trò chơi và các chức năng liên quan đến nó.
+The `dice_roll.dart` file contains the code for displaying the game and related functionalities.
 
-File `dice_holder.dart` và `main.dart` được sử dụng trong ứng dụng `DiceApp` để hiển thị trò chơi cùng với background gradient và đặt trò chơi giữa trung tâm của màn hình.
+The `dice_holder.dart` and `main.dart` are used in the `DiceApp` to display the game along with a background gradient and center the game on the screen.
 
-File `main.dart` là nơi khởi động của ứng dụng `DiceApp`. Nó cấu hình `MaterialApp` và chỉ định `DiceHolder` là màn hình chính của ứng dụng.
+The `main.dart` is the entry point of the `DiceApp` application. It configures the `MaterialApp` and specifies `DiceHolder` as the main screen of the app.
 
-File `dice_holder.dart` chứa widget `DiceHolder`, một widget `Stateless` hiển thị trò chơi cùng với background gradient và đặt trò chơi giữa trung tâm của màn hình.
+The `dice_holder.dart` file contains the `DiceHolder` widget, a `Stateless` widget that displays the game along with a background gradient and centers the game on the screen.
 
-## 4. Thư viện và công nghệ
+## 4. Libraries and Technologies
 
 - `Flutter Framework`
-- `Dart Programming Language `
-- `flutter/material.dart` cho các widget cơ bản của Flutter và phong cách thiết kế vật liệu
-- `dart:math` để tạo số ngẫu nhiên
+- `Dart Programming Language`
+- `flutter/material.dart` for basic Flutter widgets and Material Design styling.
+- `dart:math` to generate random numbers.
 
 -----
