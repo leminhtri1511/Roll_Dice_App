@@ -32,7 +32,7 @@ The app allows you to:
 
 - Roll three dice by pressing the "Roll Dice" button.
 - View the value of each die and the total value of all three dice.
-- Determine if the total value is **high/low** and **even/odd**.
+- Determine if the total value is **EVEN or ODD**.
 
 ## 3. Code Structure
 

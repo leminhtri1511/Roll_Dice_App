@@ -1,8 +1,5 @@
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 import 'dart:math';
 import 'package:flutter/material.dart';
-
 
 class DiceRoll extends StatefulWidget {
   const DiceRoll({super.key});
@@ -31,21 +28,14 @@ class _DiceRollState extends State<DiceRoll> {
 
   @override
   Widget build(BuildContext context) {
+    String resultDiv = '';
 
-    String resultSum = '', resultDiv ='';
-    if (sum > 10) {
-      resultSum = 'Lớn';
+    if (sum % 2 == 0) {
+      resultDiv = 'Even';
     } else {
-      resultSum = 'Nhỏ';
+      resultDiv = 'Odd';
     }
 
-    if(sum % 2 == 0 ) {
-      resultDiv = 'Chẵn';
-    }
-    else {
-      resultDiv ='Lẻ';
-    }
-    
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
@@ -66,13 +56,10 @@ class _DiceRollState extends State<DiceRoll> {
             ),
           ],
         ),
-
         const SizedBox(height: 30),
-
         TextButton(
           onPressed: rollDice,
           style: TextButton.styleFrom(
-            // padding: const EdgeInsets.only(top: 20),
             foregroundColor: Colors.black,
             backgroundColor: Colors.white,
             textStyle: const TextStyle(
@@ -82,32 +69,19 @@ class _DiceRollState extends State<DiceRoll> {
           ),
           child: const Text(' Roll Dice '),
         ),
-
         const SizedBox(height: 50),
-
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             Text(
-              'Tổng: $sum',
+              'Total: $sum',
               style: const TextStyle(
                 fontSize: 20,
                 color: Colors.white,
               ),
             ),
-
-            // const SizedBox(height: 20),
-
             Row(
               children: [
-                Text(
-                  '$resultSum / ',
-                  style: const TextStyle(
-                    fontSize: 20,
-                    color: Colors.white,
-                  ),
-                ),
-
                 Text(
                   '$resultDiv',
                   style: const TextStyle(
