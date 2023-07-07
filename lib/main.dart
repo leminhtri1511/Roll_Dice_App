@@ -1,5 +1,6 @@
+
 import 'package:flutter/material.dart';
-import 'package:first_app/dice_holder.dart';
+import 'dice_holder.dart';
 
 void main() {
   runApp(const DiceApp());
