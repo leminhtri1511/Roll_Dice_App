@@ -83,7 +83,7 @@ class _DiceRollState extends State<DiceRoll> {
             Row(
               children: [
                 Text(
-                  '$resultDiv',
+                  'Parity: $resultDiv',
                   style: const TextStyle(
                     fontSize: 20,
                     color: Colors.white,
