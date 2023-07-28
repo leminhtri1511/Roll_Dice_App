@@ -15,6 +15,7 @@ class DiceApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.yellow,
       ),
+      
       home: Scaffold(
         appBar: AppBar(
           toolbarHeight: 40,

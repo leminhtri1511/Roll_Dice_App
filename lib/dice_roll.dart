@@ -9,16 +9,22 @@ class DiceRoll extends StatefulWidget {
 }
 
 class _DiceRollState extends State<DiceRoll> {
+  var dicePri1;
+  var dicePri2;
+  var dicePri3;
+
   var changeDice1 = 'assets/images/dice-1.png';
   var changeDice2 = 'assets/images/dice-1.png';
   var changeDice3 = 'assets/images/dice-1.png';
+  
+  String resultDiv = '';
   int sum = 0;
 
   void rollDice() {
-    var dicePri1 = Random().nextInt(6) + 1;
-    var dicePri2 = Random().nextInt(6) + 1;
-    var dicePri3 = Random().nextInt(6) + 1;
     setState(() {
+      dicePri1 = Random().nextInt(6) + 1;
+      dicePri2 = Random().nextInt(6) + 1;
+      dicePri3 = Random().nextInt(6) + 1;
       changeDice1 = 'assets/images/dice-$dicePri1.png';
       changeDice2 = 'assets/images/dice-$dicePri2.png';
       changeDice3 = 'assets/images/dice-$dicePri3.png';
@@ -28,8 +34,6 @@ class _DiceRollState extends State<DiceRoll> {
 
   @override
   Widget build(BuildContext context) {
-    String resultDiv = '';
-
     if (sum % 2 == 0) {
       resultDiv = 'Even';
     } else {
@@ -42,17 +46,41 @@ class _DiceRollState extends State<DiceRoll> {
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
-            Image.asset(
-              changeDice1,
-              width: 120,
+            Column(
+              children: [
+                Text(
+                  dicePri1.toString(),
+                  style: const TextStyle(color: Colors.white, fontSize: 25),
+                ),
+                Image.asset(
+                  changeDice1,
+                  width: 120,
+                ),
+              ],
             ),
-            Image.asset(
-              changeDice2,
-              width: 120,
+            Column(
+              children: [
+                Text(
+                  dicePri2.toString(),
+                  style: const TextStyle(color: Colors.white, fontSize: 25),
+                ),
+                Image.asset(
+                  changeDice2,
+                  width: 120,
+                ),
+              ],
             ),
-            Image.asset(
-              changeDice3,
-              width: 120,
+            Column(
+              children: [
+                Text(
+                  dicePri3.toString(),
+                  style: const TextStyle(color: Colors.white, fontSize: 25),
+                ),
+                Image.asset(
+                  changeDice3,
+                  width: 120,
+                ),
+              ],
             ),
           ],
         ),
